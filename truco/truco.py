@@ -1,3 +1,5 @@
+import random
+
 class Carta():
     def __init__(self, numero, naipe):
         self.naipe = naipe
@@ -17,6 +19,9 @@ class Baralho():
                 if x < 8 or x > 10:
                     self.cartas.append(Carta(x, i))
     
+    def embaralhar(self):
+        random.shuffle(self.cartas)
+    
     def printarBaralho(self):
         for c in self.cartas:
             c.printarCarta()
@@ -28,6 +33,7 @@ class Jogador():
 
 
 baralho = Baralho()
+baralho.embaralhar()
 baralho.printarBaralho()
 
 
