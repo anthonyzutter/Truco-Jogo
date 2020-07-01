@@ -8,6 +8,11 @@ class Carta():
     def printarCarta(self):
         print(f"{self.numero} de {self.naipe}")
 
+    def retornarNumero(self):
+        return self.numero
+    
+    def retornarNaipe(self):
+        return self.naipe
 
 class Baralho():
     def __init__(self):
@@ -28,13 +33,18 @@ class Baralho():
     def definirVira(self, baralho):
         self.vira.append(baralho.retirarCarta())
 
-    def definirManilha(self, baralho):
-        #Função não finalizada
-        
-        """for c in self.cartas:
-            self.manilhas.append(baralho.retirarCarta())"""
-        pass
+    def definirManilha(self):
+        for v in self.vira:
+            return v.retornarNumero() + 1
 
+    def definirManilhas(self, baralho):
+        #Coloca as cartas na lista manilhas porém não remove elas do baralho
+        manilha = baralho.definirManilha()
+        for m in self.cartas:
+            x = m.retornarNumero()
+            if x == manilha:
+                self.manilhas.append(m)
+                
     def retirarCarta(self):
         return self.cartas.pop()
 
@@ -43,9 +53,8 @@ class Baralho():
             v.printarCarta()
 
     def printarManilhas(self):
-        print(str(self.manilhas))
-        #for m in self.manilhas:
-            #m.printarCarta()
+        for m in self.manilhas:
+            m.printarCarta()
     
     def printarBaralho(self):
         for c in self.cartas:
@@ -80,14 +89,7 @@ class Jogo():
 
 
 
-#Testes
-#baralho = Baralho()
-#baralho.embaralhar()
 
-
-#baralho.definirVira()
-#baralho.definirManilha(baralho)
-#baralho.printarManilhas()
 
 
 
