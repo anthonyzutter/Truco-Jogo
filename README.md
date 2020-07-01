@@ -1,5 +1,5 @@
-# Truco Jogo
- ###Jogo Truco Paulista em Python
+# Truco Paulista
+ ### Jogo Truco em Python
 
 - **Jogadores:** Pode ser jogado 1v1 ou 2v2.
 - **Número de cartas:** 40 (Não possui 8, 9, 10).
