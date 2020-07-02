@@ -6,6 +6,14 @@ class Carta():
         self.naipe = naipe
         
     def printarCarta(self):
+        if self.numero == 1:
+            self.numero = "A"
+        elif self.numero == 13:
+            self.numero = "K"
+        elif self.numero == 12:
+            self.numero = "J"
+        elif self.numero == 11:
+            self.numero = "Q"
         print(f"{self.numero} de {self.naipe}")
 
     def retornarNumero(self):
