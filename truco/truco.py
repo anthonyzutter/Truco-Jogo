@@ -2,8 +2,8 @@ import random
 
 class Carta():
     def __init__(self, numero, naipe):
-        self.naipe = naipe
         self.numero = numero
+        self.naipe = naipe
         
     def printarCarta(self):
         print(f"{self.numero} de {self.naipe}")
@@ -13,6 +13,7 @@ class Carta():
     
     def retornarNaipe(self):
         return self.naipe
+
 
 class Baralho():
     def __init__(self):
@@ -44,7 +45,7 @@ class Baralho():
             x = m.retornarNumero()
             if x == manilha:
                 self.manilhas.append(m)
-                
+
     def retirarCarta(self):
         return self.cartas.pop()
 
@@ -66,9 +67,12 @@ class Jogador():
         self.nome = nome
         self.mao = []
     
-    def retirarCartas(self, baralho):
+    def criarMao(self, baralho):
         for i in range(3):
             self.mao.append(baralho.retirarCarta())
+    
+    def jogarCarta(self, carta_escolhida):
+        return self.mao.pop(carta_escolhida - 1)
     
     def mostrarMao(self):
         for carta in self.mao:
@@ -81,15 +85,4 @@ class Jogo():
     
     def iniciarRodada(self):
         pass
-
-    def jogarCarta(self):
-        pass
-
-
-
-
-
-
-
-
 

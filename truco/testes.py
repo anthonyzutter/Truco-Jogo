@@ -14,23 +14,27 @@ print("\nManilhas: ")
 baralho.printarManilhas()
 
 anthony = Jogador("Anthony")
-anthony.retirarCartas(baralho)
+anthony.criarMao(baralho)
 print("\n<< Jogador 1 >>")
 anthony.mostrarMao()
 
 riad = Jogador("Riad")
-riad.retirarCartas(baralho)
+riad.criarMao(baralho)
 print("\n<< Jogador 2 >>")
 riad.mostrarMao()
 
 andy = Jogador("Andy")
-andy.retirarCartas(baralho)
+andy.criarMao(baralho)
 print("\n<< Jogador 3 >>")
 andy.mostrarMao()
 
 rudy = Jogador("Rudy")
-rudy.retirarCartas(baralho)
+rudy.criarMao(baralho)
 print("\n<< Jogador 4 >>")
 rudy.mostrarMao()
 
-
+a = rudy.jogarCarta(3)
+print("\nCarta jogada: ")
+a.printarCarta()
+print("\nMão atual: ")
+rudy.mostrarMao()
