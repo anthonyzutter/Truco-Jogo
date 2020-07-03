@@ -51,7 +51,7 @@ class Carta():
             self.numero = "J"
         elif self.numero == 11:
             self.numero = "Q"
-            """
+        """
         print(f"{self.numero} de {self.naipe}")
 
     def retornarNumero(self):
@@ -83,7 +83,12 @@ class Baralho():
 
     def definirManilha(self):
         for v in self.vira:
-            return v.retornarNumero() + 1
+            if v.retornarNumero() == 7:
+                return 11
+            elif v.retornarNumero() == 13:
+                return 1
+            else:
+                return v.numero + 1
 
     def definirManilhas(self, manilha):
         for m in self.cartas:
