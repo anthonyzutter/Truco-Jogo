@@ -43,16 +43,16 @@ class Carta():
             raise "Erro"
         
     def printarCarta(self):
-        """if self.numero == 1:
-            self.numero = "A"
+        if self.numero == 1:
+            print(f"A de {self.naipe}")
         elif self.numero == 13:
-            self.numero = "K"
+            print(f"K de {self.naipe}")
         elif self.numero == 12:
-            self.numero = "J"
+            print(f"J de {self.naipe}")
         elif self.numero == 11:
-            self.numero = "Q"
-        """
-        print(f"{self.numero} de {self.naipe}")
+            print(f"Q de {self.naipe}")
+        else:
+            print(f"{self.numero} de {self.naipe}")
 
     def retornarNumero(self):
         return self.numero
