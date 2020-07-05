@@ -117,6 +117,7 @@ class Jogador():
     def __init__(self, nome):
         self.nome = nome
         self.mao = []
+        self.pontos = 0
     
     def criarMao(self, baralho):
         for i in range(3):
@@ -130,7 +131,10 @@ class Jogador():
             carta.printarCarta()
     
     def adicionarPonto(self):
-        pass
+        self.pontos += 1
+    
+    def retortarPontos(self):
+        return self.pontos
 
 
 class Jogo():
