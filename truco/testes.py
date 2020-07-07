@@ -37,16 +37,16 @@ jogador2.criarMao(baralho)
 print("\n<< Jogador 2 >>")
 jogador2.mostrarMao()
 
+carta_escolhida = int(input("\nQual carta você quer jogar? "))
+carta_jogador_01 = jogador1.jogarCarta(carta_escolhida)
+print(f"\nO jogador {jogador1.nome} jogou a carta: ")
+carta_jogador_01.printarCarta()
 
 carta_escolhida = int(input("\nQual carta você quer jogar? "))
-carta_jogador_02 = jogador1.jogarCarta(carta_escolhida)
-print(f"\nO jogador {jogador1.nome} jogou a carta: ")
+carta_jogador_02 = jogador2.jogarCarta(carta_escolhida)
+print(f"\nO jogador {jogador2.nome} jogou a carta: ")
 carta_jogador_02.printarCarta()
 
-carta_escolhida = int(input("\nQual carta você quer jogar? "))
-carta_jogador_01 = jogador2.jogarCarta(carta_escolhida)
-print(f"\nO jogador {jogador2.nome} jogou a carta: ")
-carta_jogador_01.printarCarta()
 
 carta1 = Carta(carta_jogador_01.retornarNumero(), carta_jogador_01.retornarNaipe())
 carta2 = Carta(carta_jogador_02.retornarNumero(), carta_jogador_02.retornarNaipe())
