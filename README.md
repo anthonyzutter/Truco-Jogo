@@ -6,7 +6,7 @@
 - **Distribuição de cartas:** Cada jogador recebe três cartas.
 - **Objetivo:** Fazer 12 pontos para ganhar.
 - **Sequência das cartas mais fortes:** 3, 2, A, K, J, Q, 7, 6, 5, 4.
-- **Sequência dos naipes mais fortes:** Paus, Copas, Espadas, Moles.
+- **Sequência dos naipes mais fortes:** ♣Paus, ♥Copas, ♠Espadas, ♦Moles.
 
  ### Definições:
 
