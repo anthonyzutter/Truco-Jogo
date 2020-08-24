@@ -4,6 +4,7 @@ class Jogador():
         self.nome = nome
         self.mao = []
         self.pontos = 0
+        self.rodadas = 0
     
     def criarMao(self, baralho):
         for i in range(3):
@@ -19,5 +20,12 @@ class Jogador():
     def adicionarPonto(self):
         self.pontos += 1
     
-    def retortarPontos(self):
-        return self.pontos
+    def adicionarRodada(self):
+        self.rodadas +=1
+    
+    def resetar(self):
+        self.pontos = 0
+        self.mao = []
+    
+    #def retornarPontos(self):
+    #    return self.pontos

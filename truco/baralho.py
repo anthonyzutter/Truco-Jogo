@@ -7,7 +7,7 @@ class Baralho():
         self.vira = []
         self.manilhas = []
         self.cartas = []
-        self.criarBaralho()
+        self.criarBaralho() #?
 
     def criarBaralho(self):
         for i in ["Paus", "Copas", "Espadas", "Moles"]:
@@ -38,6 +38,11 @@ class Baralho():
 
     def retirarCarta(self):
         return self.cartas.pop()
+    
+    def resetarBaralho(self):
+        self.vira = []
+        self.manilhas = []
+        self.cartas = []
 
     def printarVira(self):
         for v in self.vira:

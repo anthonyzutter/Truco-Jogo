@@ -35,7 +35,7 @@ class Jogo():
         if ganhador == "Empate":
             jogador1.adicionarPonto()
             jogador2.adicionarPonto()
-            print("A rodada empatou")
+            print("Empate")
         elif ganhador == carta1:
             jogador1.adicionarPonto()
             ganhador.printarCarta()
