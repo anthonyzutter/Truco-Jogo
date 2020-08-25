@@ -6,7 +6,7 @@ class Jogo():
     def __init__(self):
         self.rodadas = []
     
-    def iniciarRodada(self):
+    def iniciarJogo(self):
         pass
 
     def criarJogador(self, nome, baralho):

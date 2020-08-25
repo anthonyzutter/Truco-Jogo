@@ -72,10 +72,6 @@ if __name__ == '__main__':
         ganhador = jogo.verificarGanhador(carta1, carta2, manilha)
         jogo.adicionarPonto(jogador1, jogador2, carta1, carta2, ganhador)
 
-        print(f"\n{jogador1.nome} Pontos {jogador1.pontos}, Rodadas {jogador1.rodadas}")
-
-        print(f"{jogador2.nome} Pontos {jogador2.pontos}, Rodadas {jogador2.rodadas}")
-
         if jogador1.pontos == 2:
             jogador1.adicionarRodada()
             print(f"\n{jogador1.nome} ganhou a rodada")
@@ -85,6 +81,9 @@ if __name__ == '__main__':
             jogador2.adicionarRodada()
             print(f"\n{jogador2.nome} ganhou a rodada")
             reiniciarJogo()
+        
+        print(f"\n{jogador1.nome} Pontos {jogador1.pontos}, Rodadas {jogador1.rodadas}")
+        print(f"{jogador2.nome} Pontos {jogador2.pontos}, Rodadas {jogador2.rodadas}")
 
         if jogador1.rodadas >= 12:
             print(f"\n{jogador1.nome} ganhou o jogo")
