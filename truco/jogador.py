@@ -6,6 +6,7 @@ class Jogador():
         self.pontos = 0
         self.rodadas = 0
         self.primeiro = False
+        self.ultimo = False
     
     def criarMao(self, baralho):
         for i in range(3):

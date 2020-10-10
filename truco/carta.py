@@ -39,7 +39,7 @@ class Carta():
             return carta_jogador_02
         else:
             raise "Erro"
-        
+    
     def printarCarta(self):
         if self.numero == 1:
             print(f"A de {self.naipe}")
