@@ -8,6 +8,13 @@
 - **Sequência das cartas mais fortes:** 3, 2, A, K, J, Q, 7, 6, 5, 4.
 - **Sequência dos naipes mais fortes:** ♣Paus, ♥Copas, ♠Espadas, ♦Moles.
 
+### Coisas para fazer
+
+- **Arrumar o empate
+- **Implementar a opção de pedir Truco, seis, nove, doze
+- **Implementar a mão de onze
+- **Implementar o Escurinho
+
  ### Definições:
 
 - **Vira:** É a carta que definirá as 4 manilhas.
@@ -17,11 +24,3 @@
 - **Seis:** É a mesma coisa que pedir truco porém só é permitido pedir depois que o adversário pedir truco e assim por diante no Nove e Doze.
 - **Mão de Onze:** A dupla que consegue chegar a 11 pontos na partida, tem o direito de olhar as cartas um do outro e analisar se irão ou não aceitar a partida. Caso a dupla aceite, a Mão de Onze já começa valendo 3 pontos. Se acharem que não será possível vencer a mão com tais cartas, podem optar por “Correr”, dando apenas 1 ponto à dupla adversária.
 - **Escurinho:** É a Mão de Onze especial, quando as duas duplas conseguem chegar a 11 pontos na partida. Todos os jogadores recebem as cartas "cobertas", isto é, viradas para baixo, e deverão jogar assim. Quem vencer a mão, vence a partida
-
-
- ### Regras:
-
- *Em breve*
-
-
-
