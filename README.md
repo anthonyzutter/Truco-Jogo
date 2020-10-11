@@ -10,10 +10,10 @@
 
 ### Coisas para fazer
 
-- **Arrumar o empate
-- **Implementar a opção de pedir Truco, seis, nove, doze
-- **Implementar a mão de onze
-- **Implementar o Escurinho
+- Arrumar o empate
+- Implementar a opção de pedir Truco, seis, nove, doze
+- Implementar a mão de onze
+- Implementar o Escurinho
 
  ### Definições:
 
