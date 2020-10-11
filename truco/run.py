@@ -67,13 +67,13 @@ if __name__ == '__main__':
                 sorteado = random.choice(jogadores)
                 if sorteado == "jogador1":
                     jogador1.primeiro = True
-                    jogador1.ultimo = True
+                    jogador2.ultimo = True
                 elif sorteado == "jogador2":
                     jogador2.primeiro = True
-                    jogador1.ultimo = True
+                    jogador3.ultimo = True
                 elif sorteado == "jogador3":
                     jogador3.primeiro = True
-                    jogador1.ultimo = True
+                    jogador4.ultimo = True
                 else:
                     jogador4.primeiro = True
                     jogador1.ultimo = True
@@ -213,16 +213,15 @@ if __name__ == '__main__':
         else:
             print("Erro")
 
-        print(f"\n{jogador1.nome} jogou a carta: ")
+        limpar()
+
+        print(f"\n>> {jogador1.nome} jogou a carta: ")
         carta_jogador_01.printarCarta()
-
-        print(f"\n{jogador2.nome} jogou a carta: ")
+        print(f">> {jogador2.nome} jogou a carta: ")
         carta_jogador_02.printarCarta()
-
-        print(f"\n{jogador3.nome} jogou a carta: ")
+        print(f">> {jogador3.nome} jogou a carta: ")
         carta_jogador_03.printarCarta()
-
-        print(f"\n{jogador4.nome} jogou a carta: ")
+        print(f">> {jogador4.nome} jogou a carta: ")
         carta_jogador_04.printarCarta()
 
         carta1 = Carta(carta_jogador_01.retornarNumero(), carta_jogador_01.retornarNaipe())
@@ -246,11 +245,11 @@ if __name__ == '__main__':
             jogador4.adicionarRodada()
             print(f"\n{jogador2.nome} e {jogador4.nome} ganharam a rodada")
             reiniciarJogo()
-        
-        
 
         print(f"\n{jogador1.nome} e {jogador3.nome} Pontos {jogador1.pontos}, Rodadas {jogador1.rodadas}")
         print(f"{jogador2.nome} e {jogador4.nome} Pontos {jogador2.pontos}, Rodadas {jogador2.rodadas}")
+
+        jogo.quemIniciaRodada(jogador1, jogador2, jogador3, jogador4)
 
         if jogador1.rodadas >= 12:
             print(f"\n{jogador1.nome} e {jogador3.nome} ganharam o jogo")

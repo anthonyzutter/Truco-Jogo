@@ -134,22 +134,8 @@ class Jogo():
         else:
             return "Erro"
     
-    def quemJogaPrimeiro(self, jogador1, jogador2, jogador3, jogador4, carta1, carta2, carta3, carta4, ganhador):
-        #Se for a primeira rodada quem começa jogando é aleatorio
-        if jogador1.pontos == 0 and jogador2.pontos == 0:
-            if jogador1.ultimo == True:
-                jogador2.ultimo = True
-                jogador1.ultimo = False
-            elif jogador2.ultimo == True:
-                jogador3.ultimo = True
-                jogador2.ultimo = False
-            elif jogador3.ultimo == True:
-                jogador4.ultimo = True
-                jogador3.ultimo = False
-            elif jogador4.ultimo == True:
-                jogador1.ultimo = True
-                jogador4.ultimo = False
-        elif carta1 == ganhador:
+    def quemJogaPrimeiro(self, jogador1, jogador2, jogador3, jogador4, carta1, carta2, carta3, carta4, ganhador): 
+        if carta1 == ganhador:
             jogador1.primeiro = True
             jogador2.primeiro = False
             jogador3.primeiro = False
@@ -171,3 +157,34 @@ class Jogo():
             jogador4.primeiro = True
         elif ganhador == "Empate":
             pass
+    
+    def quemIniciaRodada(self, jogador1, jogador2, jogador3, jogador4):
+        if jogador1.pontos == 0 and jogador2.pontos == 0:
+            if jogador1.ultimo == True:
+                jogador2.ultimo = True
+                jogador1.ultimo = False
+                jogador1.primeiro = True
+                jogador2.primeiro = False
+                jogador3.primeiro = False
+                jogador4.primeiro = False
+            elif jogador2.ultimo == True:
+                jogador3.ultimo = True
+                jogador2.ultimo = False
+                jogador1.primeiro = False
+                jogador2.primeiro = True
+                jogador3.primeiro = False
+                jogador4.primeiro = False
+            elif jogador3.ultimo == True:
+                jogador4.ultimo = True
+                jogador3.ultimo = False
+                jogador1.primeiro = False
+                jogador2.primeiro = False
+                jogador3.primeiro = True
+                jogador4.primeiro = False
+            elif jogador4.ultimo == True:
+                jogador1.ultimo = True
+                jogador4.ultimo = False
+                jogador1.primeiro = False
+                jogador2.primeiro = False
+                jogador3.primeiro = False
+                jogador4.primeiro = True   
