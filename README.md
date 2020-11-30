@@ -8,13 +8,6 @@
 - **Sequência das cartas mais fortes:** 3, 2, A, K, J, Q, 7, 6, 5, 4.
 - **Sequência dos naipes mais fortes:** ♣Paus, ♥Copas, ♠Espadas, ♦Moles.
 
-### Coisas para fazer
-
-- Arrumar o empate
-- Implementar a opção de pedir Truco, seis, nove, doze
-- Implementar a mão de onze
-- Implementar o Escurinho
-
  ### Definições:
 
 - **Vira:** É a carta que definirá as 4 manilhas.
