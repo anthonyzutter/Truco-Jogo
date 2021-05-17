@@ -38,14 +38,16 @@ if __name__ == '__main__':
     carta4 = 0
     ganhador = 0
 
-    nome = str(input("\nNome Jogador 1: "))
+    print("\nTime 1")
+    nome = str(input("Nome Jogador 1: "))
     jogador1 = jogo.criarJogador(nome, baralho)
-    
-    nome = str(input("Nome Jogador 2: "))
-    jogador2 = jogo.criarJogador(nome, baralho)
 
     nome = str(input("Nome Jogador 3: "))
     jogador3 = jogo.criarJogador(nome, baralho)
+
+    print("Time 2")
+    nome = str(input("Nome Jogador 2: "))
+    jogador2 = jogo.criarJogador(nome, baralho)
 
     nome = str(input("Nome Jogador 4: "))
     jogador4 = jogo.criarJogador(nome, baralho)
